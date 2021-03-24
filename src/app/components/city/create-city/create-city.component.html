@@ -1,0 +1,40 @@
+
+<div class="col-md-6 offset-md-3">
+    <h3 class="text-center" style="margin-top: 25px"> Create City </h3>
+    <form (ngSubmit) = "onSubmit()">
+    
+        <!-- <div class="form-group">
+            <label> CityId </label>
+            <input type="text" class = "form-control" id = "cityId"
+            [(ngModel)] = "city.cityId" name = "cityId">
+        </div> -->
+
+        <div class="form-group">
+            <label> City </label>
+            <input type="text" class = "form-control" id = "cityName"
+            [(ngModel)] = "city.cityName" name = "cityName">
+        </div>
+
+        <!-- <div class="form-group">
+            <label> CountryId </label>
+            <input type="text" class = "form-control" id = "country"
+            [(ngModel)] = "city.country" name = "country">
+        </div> -->
+
+        <!-- <div class="form-group">
+            <label> TripId </label>
+            <input type="text" class = "form-control" id = "trips"
+            [(ngModel)] = "city.trips" name = "trips">
+        </div> -->
+
+        <div class="col-md-6 offset-md-3" style="margin-bottom: 80px">     
+            <!-- <button (click) = "goToTripList()" class="btn btn-primary" style="margin-right: 50px">Back</button> -->
+            <!-- <button class="btn btn-primary mr-5" type= "back"> Back</button>    -->
+            <button class = "btn btn-success" type = "submit" style="margin-left: 40px">Submit</button>
+        </div>
+    </form>        
+</div>  
+<div class="row" style="margin-bottom: 30px">
+<h5><p><u><a href="/create-trip" target="_self"> Back to Trip /  </a></u></p></h5>
+<h5><p><u><a href="/create-country" target="_self"> / Back to Country </a></u></p></h5>
+</div>

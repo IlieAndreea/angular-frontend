@@ -1,0 +1,23 @@
+.row
+{
+    background: linear-gradient(rgba(255,255,255,.7), rgba(255,255,255,.7)), 
+    url("https://cdn.wallpapersafari.com/40/4/uWFa5v.jpg");
+    background-position:center;
+}
+
+h1
+{
+    text-align: center;
+    font-weight: bolder;
+    font-family: "Times New Roman", Times, serif;
+    margin-top: 50px;    
+}
+
+h2
+{
+    margin-top: 30px;
+    font-weight: bold;
+    font-family: "Lucida Console", "Courier New", monospace;
+    text-align: center;
+    color: rgba(14,40,189);
+}

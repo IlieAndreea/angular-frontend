@@ -1,0 +1,14 @@
+.product_cards_container {
+    margin-top:20px;
+}
+
+.card-content{
+    margin-top: 20px;
+    text-align: center;
+}
+
+.links{
+    margin-top: 25px;
+    margin-bottom: 30px;
+    text-align:right;
+}

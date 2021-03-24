@@ -1,0 +1,64 @@
+<div class="col-md-6 offset-md-3">
+    <h3 class="text-center" style="margin-top: 25px"> Update Trip </h3>
+    <form (ngSubmit) = "onSubmit()">
+
+        <div class="form-group">
+            <label> Country </label>
+            <input type="text" class = "form-control" id = "countryName"
+            [(ngModel)] = "trip.cityTrip.country.countryName" name = "countryName">
+        </div>
+    
+        <div class="form-group">
+            <label> City </label>
+            <input type="text" class = "form-control" id = "cityName"
+            [(ngModel)] = "trip.cityTrip.cityName" name = "cityName">
+        </div>
+    
+        <div class="form-group">
+            <label> Departure Month </label>
+            <input type="text" class = "form-control" id = "departureMonth"
+            [(ngModel)] = "trip.departureMonth" name = "departureMonth">
+        </div>
+    
+        <div class="form-group">
+            <label> Departure Date </label>
+            <input type="text" class = "form-control" id = "departureDate"
+            [(ngModel)] = "trip.departureDate" name = "departureDate">
+        </div>
+    
+        <div class="form-group">
+            <label> Transportation </label>
+            <input type="text" class = "form-control" id = "transportation"
+            [(ngModel)] = "trip.transportation" name = "transportation">
+        </div>
+
+        <div class="form-group">
+            <label> Hotel </label>
+            <input type="text" class = "form-control" id = "hotel"
+            [(ngModel)] = "trip.hotel" name = "hotel">
+        </div>
+    
+        <div class="form-group">
+            <label> Number Nights </label>
+            <input type="text" class = "form-control" id = "numberNights"
+            [(ngModel)] = "trip.numberNights" name = "numberNights">
+        </div>
+        
+        <div class="form-group">
+            <label> Trip Price </label>
+            <input type="text" class = "form-control" id = "tripPrice" 
+            [(ngModel)] = "trip.tripPrice" name = "tripPrice">
+        </div>
+    
+        <div class="form-group">
+            <label> Trip Currency </label>
+            <input type="text" class = "form-control" id = "tripCurrency"
+            [(ngModel)] = "trip.tripCurrency" name = "tripCurrency">
+        </div>
+
+    <div class="col-md-6 offset-md-3" style="margin-bottom: 80px">
+        <button (click) = "goToTripList()" class="btn btn-primary" style="margin-right: 50px">Back</button>
+        <button class = "btn btn-success ml-3" type = "submit" style="margin-left: 40px">Submit</button>
+    </div>         
+    </form>
+ 

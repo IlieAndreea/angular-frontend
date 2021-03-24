@@ -1,0 +1,36 @@
+<h2 class="text-center"> Select your Trip </h2>
+<table class = "table table-striped">
+    <thead>
+        <tr>
+            <th> Country Name</th>
+            <th> City Name</th>
+            <th> Departure Month</th>
+            <th> Departure Date</th>            
+            <th> Transportation</th>
+            <th> Hotel Name</th>
+            <th> Number Nights</th>
+            <th> Trip Price</th>
+            <th> Trip Currency</th>
+            <th> Number Persons</th>
+            <th> Trip Total Price</th>
+            <th> Trip Currency</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor = "let country of countries" >
+            <td> {{ country.countryName }}</td>
+            <td> {{ country.cityName }}</td>
+            <td> {{ country.departureMonth }}</td>
+            <td> {{ country.departureDate }}</td>           
+            <td> {{ country.transportation }}</td>
+            <td> {{ country.hotelName }}</td>
+            <td> {{ country.numberNights }}</td>
+            <td> {{ country.tripPrice }}</td>
+            <td> {{ country.tripCurrency }}</td>
+            <td> {{ country.numberPersons }}</td>
+            <td> {{ country.tripTotalPrice }}</td>
+            <td> {{ country.tripCurrency }}</td>
+        </tr>
+    </tbody>
+
+</table>

@@ -1,0 +1,30 @@
+/* You can add global styles to this file, and also import other style files */
+@import "~bootstrap/dist/css/bootstrap.min.css";
+
+main,
+h3,
+home,
+.navbar-nav li a{  
+    color:rgb(247, 0, 255) !;
+    font-family: Verdana !important;
+}
+
+
+body{
+    /* background: url('https://thewallpaper.co/wp-content/uploads/2020/07/wave-horizon-sky-pastel-high-resolution-cloud-turquoise-blue-landscapes-highres-free-background-images-flower-backgrounds-colourful-tropical-sunny-beach-sea-1200x750.jpg'); */
+    /* background-size: cover; */
+    /* background: linear-gradient(rgba(255,255,255,.3), rgba(255,255,255,.3)), url("https://cdn.wallpapersafari.com/40/4/uWFa5v.jpg"); */
+    background-image: linear-gradient(rgba(255,255,255,.3), rgba(255,255,255,.3)), url('src/assets/rlm1sG.jpg');
+    background-size: cover;
+}
+
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 40px;
+    background-color: rgb(18, 18, 180);
+    text-align:center;
+    color: white;
+}

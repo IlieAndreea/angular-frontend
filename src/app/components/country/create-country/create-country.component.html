@@ -1,0 +1,27 @@
+<div class="col-md-6 offset-md-3">
+    <h3 class="text-center" style="margin-top: 25px"> Create Country </h3>
+    <form (ngSubmit) = "onSubmit()">
+    
+        <div class="form-group">
+            <label> CountryId </label>
+            <input type="text" class = "form-control" id = "countryId"
+            [(ngModel)] = "country.countryId" name = "countryId">
+        </div>
+
+        <div class="form-group">
+            <label> Country </label>
+            <input type="text" class = "form-control" id = "countryName"
+            [(ngModel)] = "country.countryName" name = "countryName">
+        </div>
+
+        <div class="col-md-6 offset-md-3" style="margin-bottom: 80px">     
+            <!-- <button (click) = "goToTripList()" class="btn btn-primary" style="margin-right: 50px">Back</button> -->
+            <!-- <button class="btn btn-primary mr-5" type= "back"> Back</button>    -->
+            <button class = "btn btn-success" type = "submit" style="margin-left: 40px">Submit</button>
+
+        </div>
+    </form>        
+</div>  
+<div class="row" style="margin-bottom: 30px">
+<h5><p><u><a href="/create-city" target="_self"> Add City </a></u></p></h5>
+    </div>

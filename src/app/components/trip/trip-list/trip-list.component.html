@@ -1,0 +1,45 @@
+
+<h2> List of Trips </h2>
+
+    <div>     
+        <button (click) = "saveTrip()" class = "btn btn-success" type = "submit" style="margin-bottom: 20px">Add New Trip</button>
+     </div>
+
+    <div class="container">
+<table class = "table table-striped">
+    <thead>
+        <tr>
+            <th> Country </th>
+            <th> City </th>            
+            <th> Departure Month</th>
+            <th> Departure Date</th>
+            <th> Transportation</th>
+            <th> Hotel </th>
+            <th> Number Nights</th>            
+            <th> Trip Price</th>
+            <th> Trip Currency</th>
+            <th> Actions </th>
+        </tr>
+    </thead>
+    <tbody>
+        
+        <tr *ngFor = "let trip of trips" >
+            <td> {{ trip.cityTrip.country.countryName }}</td>
+            <td> {{ trip.cityTrip.cityName }}</td>
+            <td> {{ trip.departureMonth }}</td>
+            <td> {{ trip.departureDate | date: 'yyyy-MM-dd' }}</td>
+            <td> {{ trip.transportation }}</td>
+            <td> {{ trip.hotel}}</td>
+            <td> {{ trip.numberNights }}</td>            
+            <td> {{ trip.tripPrice }}</td>
+            <td> {{ trip.tripCurrency }}</td>        
+            <td>
+                <button (click) = "updateTrip(trip.tripId)" class = "btn btn-info"> Update</button>
+                <button (click) = "deleteTrip(trip.tripId)" class = "btn btn-danger" style="margin-left: 10px"> Delete</button>
+            </td>
+        </tr>
+    
+    </tbody>
+
+</table>
+</div>
